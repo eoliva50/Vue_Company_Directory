@@ -3,18 +3,18 @@ import router from '@/router'
 
 const dbUser = [
 {
-    username = 'admin',
-    password = 'admin',
+    username: 'admin',
+    password: 'admin',
         name: 'Admin',
         role: 'admin',
-        email: 'admin@cool-company.com'
+       email: 'admin@cool-company.com'
 },
 {
-    username = 'user',
-    password = 'user',
+    username: 'user',
+    password: 'user',
         name: 'User',
         role: 'user',
-        email: 'user@cool-company.com'
+       email: 'user@cool-company.com'
 },
 ]
 
