@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import router from '@/router.js'
 
-const dbUser = [
+const dbUsers = [
 {
     username: 'admin',
     password: 'admin',
@@ -23,9 +23,9 @@ const user = ref({})
 
 export const useAuth = () => {
     const login = (username, password) => {
-        const dbUser = dbUser.find((u) => u.username == username && u.password == password)
+        const dbUser = dbUsers.find((u) => u.username == username && u.password == password)
         if (dbUser){
-            const{ name, role, email, username } = dbUser
+            const { name, role, email, username } = dbUser
             isAuthenticated.value = true
             user.value = {name, role, email, username}
             return true
