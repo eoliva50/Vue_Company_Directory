@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import router from '@/router'
+import router from '@/router.js'
 
 const dbUser = [
 {
@@ -7,14 +7,14 @@ const dbUser = [
     password: 'admin',
         name: 'Admin',
         role: 'admin',
-       email: 'admin@cool-company.com'
+       email: 'admin@cool-company.com',
 },
 {
     username: 'user',
     password: 'user',
         name: 'User',
         role: 'user',
-       email: 'user@cool-company.com'
+       email: 'user@cool-company.com',
 },
 ]
 

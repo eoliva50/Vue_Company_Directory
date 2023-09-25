@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { useAuth } from '@/composables/useAuth'
+import { useAuth } from '@/composables/useAuth.js'
 
 const { isAuthenticated } = useAuth()
 
