@@ -11,14 +11,13 @@ const route = useRoute()
 const username = ref('')
 const password = ref('')
 
-const logUserIn = () =>{
-    if(login(username.value, password.value)){
-        if(router.query.redirect) {
+const logUserIn = async () => {
+    if (await login(username.value, password.value)) {
+        if (router.query.redirect) {
             router.push(router.query.redirect)
-        } else{
+        } else {
             router.push({name: 'Home'})
         }
-        router.push({name:'Home'})
     } else {
         logout()
     }
